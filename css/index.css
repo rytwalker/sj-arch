@@ -11,7 +11,7 @@
 }
 @keyframes slidein {
   0% {
-    transform: translateX(300px);
+    transform: translateX(1000px);
   }
   100% {
     transform: translateX(0);
@@ -19,7 +19,7 @@
 }
 @keyframes slideinleft {
   0% {
-    transform: translateX(-300px);
+    transform: translateX(-1000px);
   }
   100% {
     transform: translateX(0);
@@ -1074,8 +1074,10 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 30px;
+  color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  font-size: 20px;
   border-radius: 50%;
   position: absolute;
   width: 50px;
@@ -1087,6 +1089,7 @@ body {
 .carousel .left-button:hover,
 .carousel .right-button:hover {
   color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 .carousel .left-button {
   top: 50%;
